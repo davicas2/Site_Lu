@@ -1,0 +1,49 @@
+.about {
+    display: flex; /* Mantém a imagem e o texto lado a lado */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    padding: 2rem; /* Espaçamento interno ao redor da seção */
+    margin: 2rem 0; /* Espaçamento externo para distanciar da borda da página */
+    gap: 1rem; /* Reduz o espaço entre a imagem e o texto */
+}
+
+.about-img {
+    flex: 0 0 40%; /* Define uma largura fixa de 40% para a imagem */
+    max-width: 250px; /* Define um tamanho máximo para a imagem */
+}
+
+.about-img img {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.about-text {
+    flex: 1; /* O texto ocupa o restante do espaço disponível */
+    margin-left: 1rem; /* Adiciona um espaço entre o texto e a imagem */
+}
+
+.about-text span {
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte de "Serviços" */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--main-color);
+    display: block;
+    margin-bottom: 0.5rem; /* Espaçamento entre "Serviços" e o título */
+}
+
+.about-text h2 {
+    font-size: 2rem; /* Aumenta o tamanho do título */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1.125rem; /* Aumenta o tamanho dos parágrafos */
+    margin: 1rem 0;
+}
+
+.about-text a.btn {
+    font-size: 1.2rem; /* Aumenta o tamanho do botão */
+    margin-top: 2rem; /* Dá espaço extra acima do botão */
+}
